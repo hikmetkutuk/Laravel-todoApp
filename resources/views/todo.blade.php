@@ -12,6 +12,7 @@
     <hr>
     @foreach($todos as $key)
         {{ $key->todo }} <a href="{{ route('todo.delete', ['id' => $key->id]) }}" class="btn btn-danger">Delete</a>
+                         <a href="{{ route('todo.edit', ['id' => $key->id]) }}" class="btn btn-warning">Edit</a>
         <hr>
     @endforeach
 @stop

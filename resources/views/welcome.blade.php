@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <a href="/index">Todo List</a>
+    <a href="/todo">Todo List</a>
 @stop
 
 
