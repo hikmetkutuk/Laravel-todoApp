@@ -11,7 +11,7 @@
     </div>
     <hr>
     @foreach($todos as $key)
-        {{ $key->todo }}
+        {{ $key->todo }} <a href="{{ route('todo.delete', ['id' => $key->id]) }}" class="btn btn-danger">Delete</a>
         <hr>
     @endforeach
 @stop
