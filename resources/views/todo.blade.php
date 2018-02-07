@@ -13,6 +13,11 @@
     @foreach($todos as $key)
         {{ $key->todo }} <a href="{{ route('todo.delete', ['id' => $key->id]) }}" class="btn btn-danger">Delete</a>
                          <a href="{{ route('todo.edit', ['id' => $key->id]) }}" class="btn btn-warning">Edit</a>
+                         @if(!$key->completed)
+                             <a href="{{ route('todo.completed', ['id' => $key->id]) }}" class="btn btn-sm btn-success">Mark as Completed</a>
+                         @else
+                            <span class="text-success">Completed</span>
+                         @endif
         <hr>
     @endforeach
 @stop
