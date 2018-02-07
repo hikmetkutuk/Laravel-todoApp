@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
+        <div class="col-md-12">
             <form action="/create/todo" method="post">
                 {{ csrf_field() }}
-                <input type="text" name="todo" class="form-control input-lg" placeholder="Create new todo">
+                <input type="text" name="todo" class="form-control input-lg text-center" placeholder="Create new todo">
             </form>
         </div>
     </div>
