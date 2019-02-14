@@ -43,7 +43,7 @@ return [
             'driver' => 'mysql',
             'host' => 'localhost',
             'port' => '3306',
-            'database' => 'todo',
+            'database' => 'todo.lav',
             'username' => 'root',
             'password' => '7362',
             'unix_socket' => env('DB_SOCKET', ''),
